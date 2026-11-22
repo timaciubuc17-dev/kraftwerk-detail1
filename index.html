@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KRAFTWERK DETAIL // Fahrzeugpflege &amp; Veredelung</title>
+<meta name="description" content="Premium-Autoaufbereitung: Lackkorrektur, Keramikversiegelung und Innenraum-Detailing in Handarbeit.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121316;--bg2:#1a1c21;--line:rgba(255,255,255,.12);--tx:#eceae6;--mu:#9a9da6;--am:#e8923a;--cu:#c4683a;--glass:rgba(24,26,31,.58);--r:14px}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--tx);font:400 17px/1.65 "Plus Jakarta Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{line-height:1.08;letter-spacing:-.02em}h2{font-size:clamp(2rem,4.5vw,3.4rem);font-weight:800}
+.mono{font-family:"JetBrains Mono",monospace}.wrap{max-width:1160px;margin:auto;padding:0 22px}
+section{padding:96px 0;position:relative}.lead{color:var(--mu);max-width:56ch;margin-top:14px}
+svg.i{width:1.3em;height:1.3em;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+a{color:inherit}:focus-visible{outline:2px solid var(--am);outline-offset:3px}
+.btn{display:inline-flex;gap:9px;align-items:center;padding:14px 24px;border-radius:999px;border:1px solid var(--line);background:none;color:var(--tx);font:700 15px inherit;font-family:inherit;cursor:pointer;text-decoration:none;transition:.25s}
+.btn:hover{border-color:var(--am);transform:translateY(-2px)}
+.btn.p{background:linear-gradient(135deg,var(--am),var(--cu));color:#18110b;border:0}.btn.p:hover{box-shadow:0 10px 30px rgba(232,146,58,.35)}
+.glass{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:var(--r)}
+/* Nav */
+nav{position:fixed;inset:0 0 auto;z-index:50;transition:.3s}nav.s{background:rgba(18,19,22,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nb{display:flex;align-items:center;gap:22px;height:70px}.logo{font-weight:800;letter-spacing:.04em;text-decoration:none}.logo b{color:var(--am)}
+.nl{display:flex;gap:22px;margin-left:auto;font-size:14px}.nl a{text-decoration:none;color:var(--mu)}.nl a:hover{color:var(--tx)}
+.badge{display:flex;gap:8px;align-items:center;font-size:12px;color:#8fe0a8}.badge i{width:8px;height:8px;border-radius:50%;background:#4fd37e;animation:pu 2s infinite}
+@keyframes pu{50%{box-shadow:0 0 0 7px rgba(79,211,126,0);opacity:.6}}.burger{display:none;background:none;border:0;color:var(--tx);margin-left:auto;cursor:pointer}
+/* Hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
+.hbg,.pbg{position:absolute;inset:-8% 0;background-size:cover;background-position:center;z-index:-2}
+.hbg{background-image:linear-gradient(180deg,rgba(14,15,18,.55),rgba(14,15,18,.92)),linear-gradient(90deg,rgba(14,15,18,.85),rgba(14,15,18,.2)),url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=70),linear-gradient(135deg,#2a2d35,#0e0f12)}
+.orbs{position:absolute;inset:0;z-index:-1;pointer-events:none}.orb{position:absolute;border-radius:50%;filter:blur(40px);background:radial-gradient(circle,rgba(232,146,58,.55),transparent 70%);animation:fl 9s ease-in-out infinite alternate;transition:transform .4s ease-out}
+@keyframes fl{to{margin-top:-40px;opacity:.5}}
+.hero h1{font-size:clamp(2.8rem,8vw,6.2rem);font-weight:800;max-width:11ch}.hero p{max-width:50ch;color:#c9cbd1;margin:22px 0 32px;font-size:1.1rem}
+.hg{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:end}.btns{display:flex;gap:12px;flex-wrap:wrap}
+.status{padding:22px}.status h3{font-size:1rem;margin-bottom:12px}.status li{list-style:none;display:flex;justify-content:space-between;padding:9px 0;border-top:1px solid var(--line);font-size:14px}.status li span:last-child{color:var(--am)}
+/* Stats + Marquee */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:50px 22px}.stat{text-align:center}.stat b{font:700 clamp(2.2rem,5vw,3.6rem)/1 "JetBrains Mono";color:var(--am)}.stat span{display:block;color:var(--mu);font-size:14px}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:18px 0;background:var(--bg2)}.mt{display:flex;gap:44px;width:max-content;animation:mq 32s linear infinite}.mt span{display:flex;gap:12px;align-items:center;color:var(--mu);white-space:nowrap}.mt svg{color:var(--am)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* Slider */
+.ba{position:relative;margin-top:36px;aspect-ratio:16/8;border-radius:var(--r);overflow:hidden;cursor:ew-resize;touch-action:pan-y;user-select:none;border:1px solid var(--line);background:#2a2d35}
+.ba .im{position:absolute;inset:0;background-size:cover;background-position:center}
+.ba .af{background-image:url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=70);filter:saturate(1.35) contrast(1.15) brightness(1.05)}
+.ba .bf{background-image:url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=70);filter:grayscale(.6) sepia(.35) contrast(.65) brightness(.8) blur(.6px);clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.ba .hd{position:absolute;top:0;bottom:0;left:var(--p,50%);width:2px;background:var(--am);transform:translateX(-1px)}.ba .hd i{position:absolute;top:50%;left:50%;width:46px;height:46px;border-radius:50%;background:var(--am);transform:translate(-50%,-50%);display:grid;place-items:center;color:#18110b;box-shadow:0 0 0 6px rgba(232,146,58,.25)}
+.ba em{position:absolute;bottom:14px;padding:5px 12px;border-radius:99px;font:12px "JetBrains Mono";background:rgba(0,0,0,.6);font-style:normal}.ba em:first-of-type{left:14px}.ba em:last-of-type{right:14px}
+/* Leistungen */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0}.tab{padding:9px 18px;border-radius:99px;border:1px solid var(--line);background:none;color:var(--mu);cursor:pointer;font:600 14px inherit;font-family:inherit}.tab.on{background:var(--am);color:#18110b;border-color:var(--am)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{position:relative;padding:0;overflow:hidden;transform:perspective(800px) rotateX(var(--rx,0)) rotateY(var(--ry,0));transition:transform .15s,opacity .5s;background:var(--bg2)}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(232,146,58,.2),transparent 60%);opacity:0;transition:.3s}.card:hover::after{opacity:1}
+.ch{height:130px;background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px}.ch .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:var(--am)}
+.cb{padding:20px}.cb h3{font-size:1.2rem;margin-bottom:6px}.cb p{color:var(--mu);font-size:15px}.cm{display:flex;justify-content:space-between;margin:16px 0;font:14px "JetBrains Mono";color:var(--am)}.card.hide{display:none}
+/* Parallax */
+.par{padding:150px 0;text-align:center;overflow:hidden}.pbg{background:linear-gradient(rgba(14,15,18,.72),rgba(14,15,18,.82)),url(https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1800&q=70) center/cover fixed,linear-gradient(135deg,#3a2a1e,#121316);inset:0}
+.par .glass{display:inline-block;padding:44px;max-width:720px}.par p{color:#c9cbd1;margin-top:14px}
+/* Rechner */
+.cal{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:36px}.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0 28px}
+.opt{display:flex;gap:12px;align-items:center;text-align:left;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--bg2);color:var(--tx);cursor:pointer;font:600 14px inherit;font-family:inherit;transition:.2s}.opt small{display:block;color:var(--mu);font:400 12px "JetBrains Mono"}
+.opt[aria-pressed=true]{border-color:var(--am);background:rgba(232,146,58,.12)}.cal h3{font-size:1rem;color:var(--mu);font-weight:600}
+.sum{padding:28px;position:sticky;top:90px;align-self:start}.sum .tot{font:700 3rem/1.1 "JetBrains Mono";color:var(--am);margin:10px 0}.sum ul{list-style:none;padding:0;margin:14px 0;font-size:14px;color:var(--mu)}.sum li{padding:6px 0;border-top:1px solid var(--line)}
+/* Stimmen */
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:36px 0 60px}.rev blockquote{padding:26px}.rev cite{display:block;margin-top:14px;color:var(--am);font:normal 13px "JetBrains Mono"}.stars{color:var(--am);letter-spacing:3px}
+details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}summary::after{content:"+";color:var(--am);font-size:1.4em;transition:.3s}details[open] summary::after{transform:rotate(45deg)}details p{color:var(--mu);margin-top:10px;animation:op .4s}@keyframes op{from{opacity:0;transform:translateY(-6px)}}
+/* Kontakt */
+.ct{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;margin-top:36px}form{padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}label{font-size:13px;color:var(--mu);display:grid;gap:6px}.f{grid-column:1/-1}
+input,textarea{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--tx);font:inherit;font-size:15px}input:invalid:not(:placeholder-shown){border-color:#e5645a}.err{color:#ff8a80;font-size:12px;min-height:1em}
+.info{padding:28px;display:grid;gap:14px;align-content:start}.info p{display:flex;gap:12px}.info svg{color:var(--am);margin-top:4px}
+.modal{position:fixed;inset:0;z-index:99;display:none;place-items:center;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);padding:20px}.modal.on{display:grid}.mb{max-width:480px;padding:36px;background:var(--bg2);animation:pop .4s cubic-bezier(.2,1.4,.4,1)}@keyframes pop{from{transform:scale(.85);opacity:0}}
+.ok{width:64px;height:64px;border-radius:50%;background:rgba(79,211,126,.15);color:#4fd37e;display:grid;place-items:center;margin-bottom:16px}.ok svg{width:34px;height:34px;stroke-dasharray:30;animation:dr .7s .2s both}@keyframes dr{from{stroke-dashoffset:30}}
+.tabs.sm{margin:18px 0 0}.tab:hover{border-color:var(--am);color:var(--tx)}.sg{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.hy{margin-top:28px;padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}.hy h3{font-size:1.3rem}.hy canvas{grid-column:1/-1;width:100%;aspect-ratio:3/1;border-radius:12px;border:1px solid var(--line);display:block}.hy p{grid-column:1/-1;color:var(--mu);font-size:14px;min-height:3em}
+input[type=range]{padding:0;border:0;background:none;accent-color:var(--am);width:100%;max-width:300px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}.vs>div{padding:26px}.vs h3{font-size:1.3rem;margin-bottom:12px}.br{margin:14px 0;font-size:14px}.br span{display:flex;justify-content:space-between;color:var(--mu)}.br b{font:700 14px "JetBrains Mono";color:var(--tx)}
+.tr{height:10px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:6px}.tr i{display:block;height:100%;width:0;border-radius:9px;transition:width .9s cubic-bezier(.2,.8,.2,1)}.w .tr i{background:#8a8d96}.k .tr i{background:linear-gradient(90deg,var(--cu),var(--am))}
+.ap{font:700 2.2rem/1.1 "JetBrains Mono";margin-top:20px}.k .ap{color:var(--am)}.ap small{display:block;font:400 13px/1.5 "Plus Jakarta Sans";color:var(--mu);margin-top:6px}
+.rev blockquote.fd{opacity:0;transform:scale(.96)}.rev blockquote.hide{display:none}.fs{width:100%;margin:8px 0 14px}#fn{color:var(--mu);padding:14px 0}
+.lb{font-size:13px;color:var(--mu);margin-bottom:8px;display:block}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:9px 14px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--mu);cursor:pointer;font:600 13px inherit;font-family:inherit;transition:.2s}.chip[aria-pressed=true]{border-color:var(--am);color:var(--tx);background:rgba(232,146,58,.14)}
+.rs{grid-column:1/-1;padding:14px 16px;border:1px dashed var(--line);border-radius:10px;font:13px/1.7 "JetBrains Mono",monospace;color:var(--mu)}.rs b{color:var(--am)}
+@media(max-width:860px){.hy,.vs{grid-template-columns:1fr}}
+/* ===== Liquid-Glass-Buttons ===== */
+:is(.btn,.tab,.opt,.chip,.burger){position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(18px) saturate(165%);backdrop-filter:blur(18px) saturate(165%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 18px rgba(0,0,0,.28);transition:transform .5s cubic-bezier(.22,1.28,.36,1),box-shadow .3s,border-color .3s,background .3s,color .3s}
+.burger{padding:9px;border-radius:12px;line-height:0}
+:is(.btn,.tab,.opt,.chip,.burger)::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(130px circle at var(--bx,50%) var(--by,50%),rgba(255,255,255,.34),rgba(232,146,58,.14) 45%,transparent 72%)}
+:is(.btn,.tab,.opt,.chip,.burger)::after{content:"";position:absolute;top:-20%;bottom:-20%;left:0;width:45%;z-index:-1;pointer-events:none;background:linear-gradient(105deg,transparent,rgba(255,255,255,.3),transparent);transform:translateX(-160%) skewX(-18deg)}
+:is(.btn.p,.tab.on,.opt[aria-pressed=true],.chip[aria-pressed=true])::after{animation:sheen 5.5s ease-in-out infinite}
+:is(.btn,.tab,.opt,.chip,.burger):hover{transform:translateY(-2px) scale(1.03);border-color:rgba(255,200,140,.6);color:var(--tx);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 12px 30px rgba(0,0,0,.4),0 0 22px rgba(232,146,58,.22)}
+:is(.btn,.tab,.opt,.chip,.burger):hover::before{opacity:1}
+:is(.btn,.tab,.opt,.chip,.burger):hover::after{animation:shine .9s ease}
+:is(.btn,.tab,.opt,.chip,.burger):active{transform:scale(.97);transition-duration:.12s}
+.btn.p{color:#1a1109;border:1px solid rgba(255,235,205,.55);text-shadow:0 1px 0 rgba(255,255,255,.28);background:linear-gradient(160deg,rgba(255,214,160,.93),rgba(236,150,66,.86) 50%,rgba(214,118,60,.9));box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 8px 26px rgba(232,146,58,.3);animation:breathe 4.6s ease-in-out infinite}
+.btn.p::before{background:radial-gradient(110px circle at var(--bx,50%) var(--by,50%),rgba(255,255,255,.55),rgba(255,255,255,0) 70%)}
+.btn.p:hover{color:#1a1109;animation:none;border-color:rgba(255,235,205,.85);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 14px 38px rgba(232,146,58,.5)}
+.tab.on{color:#1a1109;border-color:rgba(255,224,180,.7);background:linear-gradient(160deg,rgba(255,206,140,.92),rgba(224,128,58,.85));box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 0 0 3px rgba(232,146,58,.18),0 8px 26px rgba(232,146,58,.38)}
+:is(.opt,.chip)[aria-pressed=true]{color:var(--tx);border-color:rgba(255,190,120,.75);background:linear-gradient(160deg,rgba(232,146,58,.34),rgba(196,104,58,.16));box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 0 0 3px rgba(232,146,58,.16),0 0 24px rgba(232,146,58,.3)}
+@keyframes sheen{0%,55%{transform:translateX(-160%) skewX(-18deg)}100%{transform:translateX(420%) skewX(-18deg)}}
+@keyframes shine{from{transform:translateX(-160%) skewX(-18deg)}to{transform:translateX(420%) skewX(-18deg)}}
+@keyframes breathe{50%{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 36px rgba(232,146,58,.46)}}
+@media(hover:none),(prefers-reduced-motion:reduce){:is(.btn,.tab,.opt,.chip,.burger):hover{transform:none}:is(.btn,.tab,.opt,.chip,.burger)::after,.btn.p{animation:none!important}}
+/* ===== Cursor-Label ===== */
+.cursor-tag{display:none;position:fixed;left:0;top:0;z-index:200;pointer-events:none;padding:6px 13px;border-radius:99px;font:600 12px/1.2 "JetBrains Mono",monospace;color:var(--tx);white-space:nowrap;background:rgba(24,26,31,.55);-webkit-backdrop-filter:blur(18px) saturate(165%);backdrop-filter:blur(18px) saturate(165%);border:1px solid rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 8px 24px rgba(0,0,0,.35);opacity:0;transition:opacity .22s}
+.cursor-tag.on{opacity:1}.cursor-tag span{display:inline-block;transition:opacity .12s,transform .12s}.cursor-tag.sw span{opacity:0;transform:translateY(4px)}
+@media (hover:hover) and (pointer:fine){.cursor-tag{display:block}}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--mu);font-size:14px;text-align:center}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){.nl,.badge{display:none}.burger{display:block}.nl.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:rgba(18,19,22,.96);padding:20px 22px;gap:16px}.hg,.cal,.ct{grid-template-columns:1fr}.sum{position:static}form{grid-template-columns:1fr}.ba{aspect-ratio:4/3}.nb .btn{display:none}section{padding:70px 0}.pbg{background-attachment:scroll}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="car" viewBox="0 0 24 24"><path d="M5 16l1.5-5.5A2 2 0 018.4 9h7.2a2 2 0 011.9 1.5L19 16M3 16h18v3H3zM7 19v1.5M17 19v1.5"/><circle cx="7.5" cy="13.5" r=".6"/><circle cx="16.5" cy="13.5" r=".6"/></symbol>
+<symbol id="drop" viewBox="0 0 24 24"><path d="M12 3s6 6.2 6 10.5a6 6 0 01-12 0C6 9.200 12 3 12 3z"/></symbol>
+<symbol id="spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.200L22 19l-2.200.8L19 22l-.8-2.200L16 19l2.200-.8z"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.500-3.400 8-8 9-4.600-1-8-4.500-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="seat" viewBox="0 0 24 24"><path d="M8 3h4a2 2 0 012 2l1 7h3a2 2 0 012 2v3H5v-3a2 2 0 012-2h3L9 5"/><path d="M7 20v1M18 20v1"/></symbol>
+<symbol id="wheel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 3v7M12 14v7M3 12h7M14 12h7"/></symbol>
+<symbol id="wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 10-3-3M3 12h16a3 3 0 11-3 3M3 16h7"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6.200 7-11.500A7 7 0 005 9.500C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></symbol>
+<symbol id="chk" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7"/></symbol>
+</defs></svg>
+
+<nav id="nav"><div class="wrap nb">
+<a class="logo" href="#top">KRAFTWERK<b> DETAIL</b></a>
+<div class="nl" id="nl"><a href="#vergleich">Ergebnis</a><a href="#leistungen">Leistungen</a><a href="#rechner">Rechner</a><a href="#stimmen">Stimmen</a><a href="#kontakt">Kontakt</a></div>
+<span class="badge mono"><i></i>Termine frei</span>
+<a class="btn p" href="#kontakt">Termin anfragen</a>
+<button class="burger" id="bg" aria-label="Menü öffnen"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></nav>
+
+<header class="hero" id="top">
+<div class="hbg" id="hbg"></div><div class="orbs" id="orbs"></div>
+<div class="wrap hg"><div>
+<h1>Lack, der Licht neu sortiert.</h1>
+<p>Fahrzeugpflege und Veredelung in Handarbeit: von der mehrstufigen Lackkorrektur bis zur Keramikversiegelung. Jedes Auto bekommt seine eigene Aufbereitung, nie ein Standardprogramm.</p>
+<div class="btns"><a class="btn p" href="#rechner"><svg class="i"><use href="#spark"/></svg>Preis berechnen</a><a class="btn" href="#leistungen">Leistungen ansehen</a></div></div>
+<aside class="glass status"><h3 class="mono">Werkstatt-Status</h3><ul><li><span>Nächster freier Termin</span><span id="nx">–</span></li><li><span>Aktuell in der Halle</span><span>3 Fahrzeuge</span></li><li><span>Keramik-Slots diese Woche</span><span>2 frei</span></li></ul></aside>
+</div></header>
+
+<div class="wrap stats rv"><div class="stat"><b data-to="480" data-s="+">0</b><span>Aufbereitete Fahrzeuge</span></div><div class="stat"><b data-to="4.9" data-d="1" data-s=" ★">0</b><span>Kundenbewertung</span></div><div class="stat"><b data-to="100" data-s=" %">0</b><span>Handarbeit</span></div></div>
+<div class="mq" aria-hidden="true"><div class="mt" id="mt"></div></div>
+
+<section id="vergleich"><div class="wrap rv"><h2>Vorher, nachher. Ziehen Sie selbst.</h2><p class="lead">Verwitterter, matter Lack links, nach Korrektur und Versiegelung rechts. Ziehen Sie den Regler, um den Unterschied zu sehen.</p>
+<div class="ba" id="ba" role="slider" aria-label="Vorher-Nachher-Regler" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"><div class="im af"></div><div class="im bf"></div><em>Vorher</em><em>Nachher</em><div class="hd"><i><svg class="i"><use href="#arr"/></svg></i></div></div>
+<div class="tabs sm" role="group" aria-label="Schnellwahl Trennlinie"><button class="tab" data-q="25">25 %</button><button class="tab on" data-q="50">50 %</button><button class="tab" data-q="75">75 %</button></div>
+<div class="hy glass" id="hy"><div><h3>Wasser-Test: So perlt der Lack ab</h3></div><div class="sg"><button class="tab" data-h="un">Unbehandelt</button><button class="tab on" data-h="cer">Keramik-Versiegelt</button><button class="btn p" id="hgo"><svg class="i"><use href="#drop"/></svg>Wasserstrahl testen</button></div><canvas id="hc" width="900" height="300" role="img" aria-label="Simulation: Wasser auf Autolack"></canvas><p id="hcap" aria-live="polite"></p></div></div></section>
+
+<section id="leistungen" style="background:var(--bg2)"><div class="wrap"><div class="rv"><h2>Leistungen &amp; Pakete</h2><p class="lead">Einzelne Module oder das Komplettprogramm. Alle Preise sind Richtwerte für Limousinen und Kombis, den genauen Preis nennen wir nach Sichtung.</p></div>
+<div class="tabs" id="lt" role="tablist"><button class="tab on" data-f="all">Alle</button><button class="tab" data-f="out">Außen &amp; Lack</button><button class="tab" data-f="in">Innenraum</button><button class="tab" data-f="pk">Komplett-Pakete</button></div>
+<div class="grid" id="gr"></div></div></section>
+
+<section class="par"><div class="pbg" id="pbg"></div><div class="wrap rv"><div class="glass"><h2>Qualität bis ins kleinste Detail</h2><p>Wir arbeiten unter Studiolicht, messen die Lackdicke vor jedem Schleifgang und geben Ihnen das Fahrzeug erst zurück, wenn wir selbst keinen Hologramm-Schleier mehr finden.</p></div></div></section>
+
+<section id="schutz" style="background:var(--bg2)"><div class="wrap"><div class="rv"><h2>Wachs oder Keramik?</h2><p class="lead">Wählen Sie einen Zeitraum: Sie sehen, wie viel Schutz danach noch übrig ist und wie oft Wachs in der Zwischenzeit erneuert werden müsste.</p></div>
+<div class="sg rv" id="pt" style="margin-top:26px"><button class="tab" data-p="0">6 Monate</button><button class="tab on" data-p="1">18 Monate</button><button class="tab" data-p="2">36 Monate</button><input type="range" id="pr" min="0" max="2" step="1" value="1" aria-label="Zeitraum wählen"></div>
+<div class="vs rv"><div class="glass w"><h3>Klassisches Wachs</h3><div id="bw"></div><div class="ap" id="aw"></div></div><div class="glass k"><h3>Keramikversiegelung</h3><div id="bk"></div><div class="ap" id="ak"></div></div></div>
+<p class="mono rv" style="color:var(--mu);font-size:12px;margin-top:16px">Richtwerte aus Herstellerangaben und Werkstatterfahrung. Die tatsächliche Haltbarkeit hängt von Pflege und Nutzung ab.</p></div></section>
+<section id="rechner"><div class="wrap"><div class="rv"><h2>Preis- &amp; Zeitrechner</h2><p class="lead">Fahrzeuggröße wählen, Module antippen: Preis und Arbeitszeit aktualisieren sich sofort.</p></div>
+<div class="cal rv"><div><h3>Fahrzeuggröße</h3><div class="opts" id="sz"></div><h3>Module</h3><div class="opts" id="md"></div></div>
+<aside class="glass sum"><h3>Ihre Zusammenstellung</h3><div class="tot" id="tot">0 €</div><div class="mono" id="hrs" style="color:var(--mu);font-size:14px">ca. 0 Std. Arbeitszeit</div><ul id="sl"></ul><button class="btn p" id="rq" style="width:100%;justify-content:center">Dieses Paket direkt anfragen</button></aside></div></div></section>
+
+<section id="stimmen" style="background:var(--bg2)"><div class="wrap"><h2 class="rv">Das sagen unsere Kunden</h2><div class="tabs rv" id="rt"><button class="tab on" data-r="all">Alle</button><button class="tab" data-r="lack">Lack &amp; Keramik</button><button class="tab" data-r="innen">Innenraum</button></div>
+<div class="rev" id="rl"><blockquote class="glass rv" data-t="lack"><span class="stars">★★★★★</span><p>Mein 15 Jahre alter Golf sah nach der Lackkorrektur besser aus als bei der Auslieferung. Und er perlt auch nach dem Winter noch.</p><cite>Markus H., Heilbronn</cite></blockquote><blockquote class="glass rv" data-t="lack"><span class="stars">★★★★★</span><p>Ehrliche Beratung: Man hat mir die Keramik nicht aufgeschwatzt, sondern erklärt, was bei meinem Lack wirklich Sinn ergibt.</p><cite>Sabine W., Künzelsau</cite></blockquote><blockquote class="glass rv" data-t="innen"><span class="stars">★★★★★</span><p>Der Hundegeruch im Kombi war nach der Ozonbehandlung und Tiefenreinigung komplett weg. Kaum zu glauben.</p><cite>Jan K., Schwäbisch Hall</cite></blockquote><blockquote class="glass rv" data-t="innen"><span class="stars">★★★★★</span><p>Meine Ledersitze waren grau und rissig. Nach der Lederpflege fühlen sie sich wieder weich an und sehen fast wie neu aus.</p><cite>Petra L., Crailsheim</cite></blockquote><blockquote class="glass rv" data-t="lack"><span class="stars">★★★★★</span><p>Schwarzer Lack mit Swirls ohne Ende. Nach der Korrektur spiegeln sich die Hallenlampen glasklar im Lack.</p><cite>Tobias R., Öhringen</cite></blockquote></div>
+<div class="rv" id="faq" style="max-width:780px"><h2 style="font-size:2rem;margin-bottom:10px">Häufige Fragen</h2><input class="fs" id="fi" type="search" placeholder="Frage durchsuchen …" aria-label="Häufige Fragen durchsuchen" autocomplete="off"><p id="fn" hidden>Dazu haben wir noch keine Antwort. Schreiben Sie uns einfach über das Kontaktformular, wir melden uns.</p>
+<details><summary>Wie lange dauert eine Keramikversiegelung?</summary><p>Mit vorheriger Lackkorrektur rechnen Sie mit zwei bis drei Tagen. Die Aushärtung dauert etwa eine Woche, in dieser Zeit bitte nicht waschen.</p></details>
+<details><summary>Kann jeder Kratzer entfernt werden?</summary><p>Nein. Was durch den Klarlack geht, lässt sich nicht herauspolieren. Wir messen vorab die Lackdicke und sagen Ihnen ehrlich, was möglich ist.</p></details>
+<details><summary>Bieten Sie einen Hol- und Bringservice an?</summary><p>Ja, im Umkreis von 30 km für 39 €. Sprechen Sie uns bei der Terminanfrage darauf an.</p></details>
+<details><summary>Wie pflege ich das Fahrzeug danach?</summary><p>Mit der Zwei-Eimer-Handwäsche und einem pH-neutralen Shampoo. Beim Abholen bekommen Sie eine Pflegeanleitung mit.</p></details></div></div></section>
+
+<section id="kontakt"><div class="wrap"><div class="rv"><h2>Termin anfragen</h2><p class="lead">Wir melden uns innerhalb eines Werktags mit einem Terminvorschlag und einem verbindlichen Angebot.</p></div>
+<div class="ct rv"><form class="glass" id="fm" novalidate>
+<label>Name<input name="name" required placeholder="Vor- und Nachname"><span class="err"></span></label>
+<label>Telefon / WhatsApp<input name="tel" required type="tel" placeholder="z. B. 0171 2345678"><span class="err"></span></label>
+<label>Fahrzeugmodell<input name="car" required placeholder="z. B. BMW 3er Touring, 2019"><span class="err"></span></label>
+<label>Wunschtermin<input name="date" type="date"></label>
+<label class="f">Gewähltes Paket<input name="pkg" id="pkg" readonly placeholder="Noch nichts gewählt, nutzen Sie den Rechner oder beschreiben Sie Ihren Wunsch unten"></label>
+<div class="f"><span class="lb">Aktueller Zustand / Besonderheiten</span><div class="chips" id="chips"><button type="button" class="chip" aria-pressed="false">Kratzer / Swirls</button><button type="button" class="chip" aria-pressed="false">Tierhaare / Gerüche</button><button type="button" class="chip" aria-pressed="false">Harz / Vogelkot</button><button type="button" class="chip" aria-pressed="false">Felgen stark verschmutzt</button></div></div><label class="f">Nachricht<textarea name="msg" rows="4" placeholder="Zustand des Fahrzeugs, besondere Wünsche …"></textarea></label>
+<div class="rs" id="rs" aria-live="polite"></div><button class="btn p f" style="justify-content:center">Anfrage senden</button></form>
+<div class="glass info"><p><svg class="i"><use href="#pin"/></svg><span>Musterstraße 12<br>74653 Künzelsau</span></p><p><svg class="i"><use href="#clock"/></svg><span>Mo–Fr 8–18 Uhr<br>Sa 9–14 Uhr nach Vereinbarung</span></p><a class="btn" href="tel:+4979400000000"><svg class="i"><use href="#ph"/></svg>07940 000 000</a><a class="btn" href="https://wa.me/4979400000000" target="_blank" rel="noopener">WhatsApp schreiben</a></div></div></div></section>
+
+<footer>© <span id="yr"></span> KRAFTWERK DETAIL // Fahrzeugpflege &amp; Veredelung · Impressum · Datenschutz</footer>
+
+<div class="cursor-tag" aria-hidden="true"><span></span></div>
+<div class="modal" id="mo" role="dialog" aria-modal="true"><div class="mb glass"><div class="ok"><svg class="i"><use href="#chk"/></svg></div><h2 style="font-size:1.8rem">Anfrage gesendet</h2><p class="lead" id="ms"></p><button class="btn p" id="mc" style="margin-top:22px">Schließen</button></div></div>
+
+<script>
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)],ic=n=>`<svg class="i"><use href="#${n}"/></svg>`,eur=n=>Math.round(n).toLocaleString("de-DE")+" €";
+// Daten
+const MOD=[["wash","Intensiv-Handwäsche",49,1.5,"drop"],["polish","Mehrstufige Lackpolitur",390,8,"spark"],["cer","Keramikversiegelung 3 Jahre",690,10,"shield"],["int","Tiefenreinigung Innenraum",129,3,"car"],["leder","Lederpflege & Imprägnierung",89,1.5,"seat"],["ozon","Ozonbehandlung",59,1,"wind"]];
+const SZ=[["Kleinwagen",1],["Limousine / Kombi",1.25],["SUV / Transporter",1.5]];
+const SV=[["out","wash","Intensiv-Handwäsche","Schonende Zwei-Eimer-Wäsche, Lackreinigung mit Knete, Felgen und Radhäuser.","1,5 Std.",49,"photo-1503376780353-7e6692767b70"],["out","polish","Lackkorrektur","Mehrstufig: Hologramme, Waschspuren und feine Kratzer verschwinden.","8 Std.",390,"photo-1552519507-da3b142c6e3d"],["out","cer","Keramikversiegelung","Dreijähriger Schutz, extremer Glanz und Wasserperlen.","10 Std.",690,"photo-1492144534655-ae79c964c9d7"],["in","int","Innenraum-Tiefenreinigung","Polster, Teppiche, Dachhimmel und Kunststoffe, bis in die Fugen.","3 Std.",129,"photo-1503376780353-7e6692767b70"],["in","leder","Lederpflege","Reinigen, Rückfetten und Imprägnieren gegen Verfärbung und Risse.","1,5 Std.",89,"photo-1552519507-da3b142c6e3d"],["pk","wash,polish,cer","Paket „Showroom“","Wäsche, Lackkorrektur und Keramik: das Rundum-Finish für Außen.","19 Std.",1129,"photo-1492144534655-ae79c964c9d7"],["pk","wash,int,leder,ozon","Paket „Neuwagen-Gefühl“","Außenwäsche plus komplette Innenraumaufbereitung inkl. Ozon.","7 Std.",326,"photo-1503376780353-7e6692767b70"]];
+const U="https://images.unsplash.com/";
+// Nav
+const nav=$("#nav");$("#bg").onclick=()=>$("#nl").classList.toggle("open");$$("#nl a").forEach(a=>a.onclick=()=>$("#nl").classList.remove("open"));
+// Marquee
+$("#mt").innerHTML=[0,1].map(()=>["Keramikversiegelung|shield","Lackkorrektur|spark","Innenraum-Detailing|car","Lederpflege|seat","Felgenversiegelung|wheel"].map(x=>{const[t,i]=x.split("|");return`<span>${ic(i)}${t}</span>`}).join("")).join("");
+// Status
+const d=new Date();d.setDate(d.getDate()+(d.getDay()>=5?3:1));$("#nx").textContent=d.toLocaleDateString("de-DE",{weekday:"short",day:"2-digit",month:"2-digit"});$("#yr").textContent=new Date().getFullYear();
+// Orbs + Maus
+const ob=$("#orbs");for(let i=0;i<7;i++){const o=document.createElement("i");o.className="orb";const s=60+Math.random()*140;o.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*95}%;top:${Math.random()*90}%;animation-delay:-${Math.random()*9}s;animation-duration:${7+Math.random()*7}s`;o.dataset.k=(i+1)*6;ob.appendChild(o)}
+$("#top").addEventListener("mousemove",e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;$$(".orb").forEach(o=>o.style.transform=`translate(${x*o.dataset.k*-3}px,${y*o.dataset.k*-3}px)`)});
+// Scroll: Nav, Parallax
+const pbg=$("#pbg");addEventListener("scroll",()=>{const y=scrollY;nav.classList.toggle("s",y>40);if(y<innerHeight)$("#hbg").style.transform=`translateY(${y*.25}px)`},{passive:true});
+// Reveal + Counter
+const cnt=el=>{const t=+el.dataset.to,dc=+el.dataset.d||0,s=el.dataset.s||"",t0=performance.now();(function f(n){const p=Math.min((n-t0)/1600,1),v=t*(1-Math.pow(1-p,3));el.textContent=v.toFixed(dc).replace(".",",")+s;if(p<1)requestAnimationFrame(f)})(t0)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");$$("[data-to]",e.target).forEach(cnt);io.unobserve(e.target)}}),{threshold:.15});
+const rv=()=>$$(".rv:not(.in)").forEach((el,i)=>{el.style.transitionDelay=(i%4)*90+"ms";io.observe(el)});
+// Leistungen
+$("#gr").innerHTML=SV.map(([c,m,t,p,du,pr,im])=>`<article class="card glass rv" data-c="${c}"><div class="ch" style="background-image:linear-gradient(transparent,rgba(18,19,22,.9)),url(${U}${im}?auto=format&fit=crop&w=600&q=60),linear-gradient(135deg,#3a2a1e,#1a1c21)"><span class="ic glass">${ic(c=="pk"?"car":MOD.find(x=>x[0]==m.split(",")[0])[4])}</span></div><div class="cb"><h3>${t}</h3><p>${p}</p><div class="cm"><span>${du}</span><span>ab ${eur(pr)}</span></div><button class="btn" data-m="${m}">Im Rechner auswählen</button></div></article>`).join("");
+function ftab(f){$$("#lt .tab").forEach(x=>x.classList.toggle("on",x.dataset.f==f));$$(".card").forEach(c=>c.classList.toggle("hide",f!="all"&&c.dataset.c!=f));try{sessionStorage.setItem("kw_tab",f)}catch(e){}}$$("#lt .tab").forEach(b=>b.onclick=()=>ftab(b.dataset.f));
+$$(".card").forEach(c=>{c.onmousemove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.setProperty("--rx",(.5-y)*8+"deg");c.style.setProperty("--ry",(x-.5)*8+"deg");c.style.setProperty("--mx",x*100+"%");c.style.setProperty("--my",y*100+"%")};c.onmouseleave=()=>{c.style.setProperty("--rx","0deg");c.style.setProperty("--ry","0deg")}});
+// Rechner
+let size=1,sel=new Set(),shown=0;
+$("#sz").innerHTML=SZ.map(([n],i)=>`<button class="opt" data-i="${i}" aria-pressed="${i==1}">${ic("car")}<span>${n}<small>×${SZ[i][1].toString().replace(".",",")}</small></span></button>`).join("");size=1;
+$("#md").innerHTML=MOD.map(([k,n,p,h,i])=>`<button class="opt" data-k="${k}" aria-pressed="false">${ic(i)}<span>${n}<small>ab ${p} € · ${h.toString().replace(".",",")} Std.</small></span></button>`).join("");
+$("#sz").onclick=e=>{const b=e.target.closest(".opt");if(!b)return;size=SZ[b.dataset.i][1];$$("#sz .opt").forEach(x=>x.setAttribute("aria-pressed",x==b));calc()};
+$("#md").onclick=e=>{const b=e.target.closest(".opt");if(!b)return;const k=b.dataset.k;sel.has(k)?sel.delete(k):sel.add(k);b.setAttribute("aria-pressed",sel.has(k));calc()};
+function calc(){let p=0,h=0;const L=[];MOD.forEach(m=>{if(sel.has(m[0])){p+=m[2]*size;h+=m[3]*(size>1?1+(size-1)*.6:1);L.push(`<li>${m[1]}</li>`)}});
+ $("#sl").innerHTML=L.join("")||"<li>Noch kein Modul gewählt</li>";$("#hrs").textContent="ca. "+(Math.round(h*2)/2).toString().replace(".",",")+" Std. Arbeitszeit";
+ const a=shown,t0=performance.now();(function f(n){const q=Math.min((n-t0)/450,1);$("#tot").textContent=eur(a+(p-a)*q);if(q<1)requestAnimationFrame(f)})(t0);shown=p;
+ $("#pkg").value=sel.size?`${SZ.find(s=>s[1]==size)[0]}: ${MOD.filter(m=>sel.has(m[0])).map(m=>m[1]).join(", ")}, ca. ${eur(p)}`:"";rsum()}
+$$("[data-m]").forEach(b=>b.onclick=()=>{sel=new Set(b.dataset.m.split(","));$$("#md .opt").forEach(x=>x.setAttribute("aria-pressed",sel.has(x.dataset.k)));calc();$("#rechner").scrollIntoView()});
+$("#rq").onclick=()=>{if(!sel.size){$("#tot").animate([{transform:"translateX(-6px)"},{transform:"translateX(6px)"},{transform:"none"}],300);return}$("#kontakt").scrollIntoView()};calc();
+// Vorher/Nachher
+const ba=$("#ba");let drag=0;const mv=x=>{const r=ba.getBoundingClientRect(),p=Math.max(0,Math.min(100,(x-r.left)/r.width*100));setP(p)};
+ba.onpointerdown=e=>{drag=1;ba.setPointerCapture(e.pointerId);mv(e.clientX)};ba.onpointermove=e=>drag&&mv(e.clientX);ba.onpointerup=()=>drag=0;
+ba.onkeydown=e=>{const v=+ba.getAttribute("aria-valuenow");if(e.key=="ArrowLeft"||e.key=="ArrowRight"){setP(Math.max(0,Math.min(100,v+(e.key=="ArrowLeft"?-5:5))))}};
+// Formular
+const fm=$("#fm"),M=$("#mo");
+fm.onsubmit=e=>{e.preventDefault();let ok=1;$$("[required]",fm).forEach(i=>{const bad=!i.value.trim()||(i.type=="tel"&&i.value.replace(/\D/g,"").length<6);i.nextElementSibling.textContent=bad?(i.type=="tel"?"Bitte geben Sie eine gültige Telefonnummer an.":"Dieses Feld wird benötigt."):"";if(bad)ok=0});if(!ok)return;
+ const f=new FormData(fm),cz=$$("#chips .chip[aria-pressed=true]").map(x=>x.textContent);$("#ms").innerHTML=`Danke, ${esc(f.get("name"))}. Wir melden uns unter ${esc(f.get("tel"))} mit einem Terminvorschlag.<br><br><span class="mono" style="font-size:13px">Fahrzeug: ${esc(f.get("car"))}${f.get("date")?"<br>Wunschtermin: "+new Date(f.get("date")).toLocaleDateString("de-DE"):""}${f.get("pkg")?"<br>Paket: "+esc(f.get("pkg")):""}${cz.length?"<br>Zustand: "+cz.join(", "):""}</span>`;
+ M.classList.add("on");$("#mc").focus();fm.reset();$$("#chips .chip").forEach(x=>x.setAttribute("aria-pressed","false"));sel.clear();$$("#md .opt").forEach(x=>x.setAttribute("aria-pressed","false"));shown=0;calc()};
+$("#mc").onclick=()=>M.classList.remove("on");M.onclick=e=>e.target==M&&M.classList.remove("on");addEventListener("keydown",e=>e.key=="Escape"&&M.classList.remove("on"));
+// Schnellwahl Vorher/Nachher
+let cur=50;function setP(p){ba.style.setProperty("--p",p+"%");ba.setAttribute("aria-valuenow",Math.round(p));cur=p;$$("[data-q]").forEach(b=>b.classList.toggle("on",+b.dataset.q==Math.round(p)))}
+function glide(t){const a=cur,t0=performance.now();(function f(n){const q=Math.min((n-t0)/450,1);setP(a+(t-a)*(1-Math.pow(1-q,3)));if(q<1)requestAnimationFrame(f)})(t0)}
+$$("[data-q]").forEach(b=>b.onclick=()=>glide(+b.dataset.q));
+// Hydrophobie-Test
+const hc=$("#hc"),hx=hc.getContext("2d"),HC={cer:"Keramik-Versiegelt: Das Wasser bildet runde Perlen und rollt rückstandslos ab. Zurück bleibt eine trockene, spiegelnde Oberfläche.",un:"Unbehandelt: Das Wasser bleibt als flacher Film haften und läuft nur träge ab. Der Lack wirkt matt und bleibt lange nass."};
+let hm="cer",hd=[],hr=0,hq=0;
+function hbase(){const W=hc.width,H=hc.height,g=hx.createLinearGradient(0,0,0,H);hx.globalAlpha=1;
+ if(hm=="cer"){g.addColorStop(0,"#3b4352");g.addColorStop(.55,"#12151b");g.addColorStop(1,"#2a2f3b")}else{g.addColorStop(0,"#57534c");g.addColorStop(1,"#3a3733")}
+ hx.fillStyle=g;hx.fillRect(0,0,W,H);
+ if(hm=="cer"){const s=hx.createLinearGradient(0,0,W,0);s.addColorStop(0,"rgba(255,255,255,0)");s.addColorStop(.45,"rgba(255,255,255,.16)");s.addColorStop(1,"rgba(255,255,255,0)");hx.fillStyle=s;hx.fillRect(0,H*.18,W,H*.14)}}
+function hloop(){const t=performance.now()-hr,W=hc.width,H=hc.height,cer=hm=="cer",a=cer||t<1800?1:Math.max(0,1-(t-1800)/9000);
+ if(t<1800)for(let i=0;i<5;i++)hd.push({x:Math.random()*W,y:Math.random()*H*Math.min(1,t/1500),r:cer?3+Math.random()*8:5+Math.random()*9,v:0});
+ hbase();hx.globalAlpha=a;
+ if(!cer){hx.fillStyle="rgba(165,195,220,.3)";hx.fillRect(0,0,W,H*Math.min(1,t/1500))}
+ hd=hd.filter(d=>{if(cer){if(t>1800){d.v+=.1+d.r*.012;d.y+=d.v;d.x+=Math.sin(d.y/20)*.3}}else if(t>1800)d.y+=.15;return d.y-d.r<H});
+ hd.forEach(d=>{if(cer){const g=hx.createRadialGradient(d.x-d.r*.3,d.y-d.r*.3,d.r*.1,d.x,d.y,d.r);g.addColorStop(0,"rgba(255,255,255,.95)");g.addColorStop(.5,"rgba(150,200,240,.35)");g.addColorStop(1,"rgba(90,140,200,.55)");hx.fillStyle=g;hx.beginPath();hx.arc(d.x,d.y,d.r,0,7);hx.fill()}else{hx.fillStyle="rgba(170,195,215,.35)";hx.beginPath();hx.ellipse(d.x,d.y,d.r*1.8,d.r*.7,0,0,7);hx.fill()}});
+ if(t<1800||(cer?hd.length:a>0))requestAnimationFrame(hloop);else{hq=0;hbase()}}
+$("#hgo").onclick=()=>{hd=[];hr=performance.now();if(!hq){hq=1;hloop()}};
+$$("#hy [data-h]").forEach(b=>b.onclick=()=>{hm=b.dataset.h;$$("#hy [data-h]").forEach(x=>x.classList.toggle("on",x==b));hd=[];hr=-1e9;$("#hcap").textContent=HC[hm];if(!hq)hbase()});
+$("#hcap").textContent=HC[hm];hbase();
+// Fahrzeug-Check
+function rsum(){const c=$$("#chips .chip[aria-pressed=true]").map(x=>x.textContent),p=$("#pkg").value;$("#rs").innerHTML="<b>Anfrage-Zusammenfassung</b><br>Paket: "+(p?esc(p):"noch offen")+"<br>Zustand: "+(c.length?c.join(", "):"keine Angabe")}
+$("#chips").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;b.setAttribute("aria-pressed",b.getAttribute("aria-pressed")!="true");rsum()};
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+rsum();
+// Schutz-Vergleich
+const PD=[{m:6,w:[55,45,35],k:[98,97,96],n:1},{m:18,w:[10,6,4],k:[94,92,90],n:3},{m:36,w:[3,2,1],k:[85,80,78],n:6}];
+["bw","bk"].forEach(id=>$("#"+id).innerHTML=["UV-Strahlung","Streusalz","Waschchemie"].map(n=>`<div class="br"><span>${n}<b>0 %</b></span><div class="tr"><i></i></div></div>`).join(""));
+function pset(i){const p=PD[i];$("#pr").value=i;$$("#pt .tab").forEach((b,x)=>b.classList.toggle("on",x==i));[["bw","w"],["bk","k"]].forEach(([id,k])=>$$(".br",$("#"+id)).forEach((r,j)=>{$("b",r).textContent=p[k][j]+" %";$("i",r).style.width=p[k][j]+"%"}));
+ $("#aw").innerHTML=`${p.n}× neu auftragen<small>Wachs hält etwa 6 Monate, danach muss nachgelegt werden.</small>`;$("#ak").innerHTML=`1× versiegeln<small>Bei ${p.m} Monaten reicht eine einzige Versiegelung.</small>`}
+$$("#pt .tab").forEach(b=>b.onclick=()=>pset(+b.dataset.p));$("#pr").oninput=e=>pset(+e.target.value);
+new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){pset(1);o.disconnect()}},{threshold:.3}).observe($("#schutz .vs"));
+// Stimmen-Filter + FAQ-Suche
+$$("#rt .tab").forEach(b=>b.onclick=()=>{$$("#rt .tab").forEach(x=>x.classList.toggle("on",x==b));$$("#rl blockquote").forEach(q=>{if(b.dataset.r=="all"||q.dataset.t==b.dataset.r){q.classList.remove("hide");void q.offsetWidth;q.classList.remove("fd")}else{q.classList.add("fd");setTimeout(()=>q.classList.contains("fd")&&q.classList.add("hide"),260)}})});
+$("#fi").oninput=e=>{const q=e.target.value.trim().toLowerCase();let n=0;$$("#faq details").forEach(d=>{const m=!q||d.textContent.toLowerCase().includes(q);d.style.display=m?"":"none";d.open=!!q&&m;if(m)n++});$("#fn").hidden=n>0};
+// sessionStorage: Filter-Tab und Scroll-Position
+try{history.scrollRestoration="manual";const t=sessionStorage.getItem("kw_tab");if(t&&$("#lt [data-f='"+t+"']"))ftab(t)}catch(e){}
+let st;const sv=()=>{try{sessionStorage.setItem("kw_y",scrollY)}catch(e){}};
+addEventListener("scroll",()=>{clearTimeout(st);st=setTimeout(sv,150)},{passive:true});addEventListener("pagehide",sv);document.addEventListener("visibilitychange",()=>document.hidden&&sv());
+addEventListener("load",()=>{try{const y=+sessionStorage.getItem("kw_y");if(y>0&&!location.hash)scrollTo({top:y,behavior:"instant"})}catch(e){}});
+// Liquid-Glass: Lichtreflex + Cursor-Label
+const BS=".btn,.tab,.opt,.chip,.burger",fine=matchMedia("(hover:hover) and (pointer:fine)"),rmo=matchMedia("(prefers-reduced-motion:reduce)"),tag=$(".cursor-tag"),tsp=$("span",tag);
+let tx=0,ty=0,px=0,py=0,tr=0,tseen=0,tcur=null,tlab="",tsw;
+function lbl(b){const d=b.dataset.cursorLabel,t=b.textContent.trim(),on=b.classList.contains("on"),pr=b.getAttribute("aria-pressed")=="true";
+ if(d)return d;
+ if(b.matches(".burger"))return $("#nl").classList.contains("open")?"Menü schließen":"Menü öffnen";
+ if(b.matches(".tab")){const x=b.dataset.q?"Regler auf "+t:b.dataset.h?"Modus: "+t:b.dataset.p?"Zeitraum: "+t:"Filter: "+t;return on?"Aktiv: "+t:x}
+ if(b.matches(".opt"))return b.closest("#sz")?"Größe wählen":pr?"Modul entfernen":"Modul hinzufügen";
+ if(b.matches(".chip"))return pr?"Markierung entfernen":"Zustand markieren";
+ const h=b.getAttribute("href")||"";
+ if(h=="#rechner")return"Zum Preisrechner";if(h=="#leistungen")return"Leistungen ansehen";if(h=="#kontakt")return"Zum Kontaktformular";if(h.startsWith("tel:"))return"Jetzt anrufen";if(h.includes("wa.me"))return"WhatsApp öffnen";
+ if(b.id=="rq")return"Paket anfragen";if(b.id=="hgo")return"Wasserstrahl starten";if(b.id=="mc")return"Fenster schließen";if(b.dataset.m)return"Im Rechner vorwählen";if(b.closest("form")&&b.type=="submit")return"Anfrage absenden";
+ return t}
+function setTag(b){if(!b){tcur=null;tag.classList.remove("on");return}
+ const t=lbl(b);if(b!==tcur||t!==tlab){tcur=b;tlab=t;if(tag.classList.contains("on")){tag.classList.add("sw");clearTimeout(tsw);tsw=setTimeout(()=>{tsp.textContent=t;tag.classList.remove("sw")},110)}else tsp.textContent=t}
+ tag.classList.add("on")}
+function tloop(){const k=rmo.matches?1:.18;px+=(tx-px)*k;py+=(ty-py)*k;tag.style.transform=`translate3d(${Math.min(px+16,innerWidth-tag.offsetWidth-8)}px,${py+18}px,0)`;tr=Math.abs(tx-px)>.3||Math.abs(ty-py)>.3?requestAnimationFrame(tloop):0}
+document.addEventListener("pointermove",e=>{const b=e.target.closest?e.target.closest(BS):null;
+ if(b){const r=b.getBoundingClientRect();b.style.setProperty("--bx",e.clientX-r.left+"px");b.style.setProperty("--by",e.clientY-r.top+"px")}
+ if(!fine.matches||e.pointerType=="touch")return;
+ tx=e.clientX;ty=e.clientY;if(!tseen){px=tx;py=ty;tseen=1}
+ setTag(b);if(!tr)tr=requestAnimationFrame(tloop)});
+document.addEventListener("click",()=>setTimeout(()=>tcur&&setTag(tcur),0));
+document.documentElement.addEventListener("mouseleave",()=>{tcur=null;tag.classList.remove("on")});
+rv();
+</script>
+</body>
+</html>
